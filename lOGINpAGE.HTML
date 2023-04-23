@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sign In</h1>
+    <div id="form1"></div>
+    <form >
+        <label>UserName:</label>
+        <input type="text"  id="uname">
+        <br><br>
+        <label>Password:</label>
+        <input type="password" id="pass">
+        <br><br>
+        <button onclick="check()">Login In</button>
+    </form>
+</div>
+    <script>
+        var name = document.getElementById("uname").value;
+        var pa = document.getElementById("pass").value;
+        function check(){
+        if(name=="Nehal" && pa == "123"){
+            document.getElementById("form1").style.visibility="hidden"
+        }
+    }
+    </script>
+</body>
+</html>
